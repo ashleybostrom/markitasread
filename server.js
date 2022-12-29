@@ -1,15 +1,15 @@
 const fs = require("fs");
 const util = require("util");
-const inquirer = requirer("inquirer");
+const inquirer = require("inquirer");
 const generateReadme = require("")
-const writeFileAsync 
+const writeFile = 
 
 //User questions to generate README.md
 function promptUser(){
     return inquirer.prompt([
         {
             type: "input",
-            name: "proejctTitle",
+            name: "projectTitle",
             message: "What is your project title?",
         },
         {
@@ -20,7 +20,7 @@ function promptUser(){
         {
             type: "input",
             name: "motivation",
-            message: "What was your motivation for your proejct?",
+            message: "What was your motivation for your project?",
         },
         {
             type: "input",
@@ -30,7 +30,7 @@ function promptUser(){
         {
             type: "input",
             name: "solve",
-            message: "Why problem does it solve?",
+            message: "What problem does it solve?",
         },
         {
             type: "input",
