@@ -1,23 +1,14 @@
 {
-  "name": "readmegenerator",
+  "name": "static-site",
   "version": "1.0.0",
-  "description": "node cli app that creates high quality readme from user input",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ashleybostrom/readmegenerator.git"
-  },
-  "keywords": [],
-  "author": "Ashley Bostrom",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ashleybostrom/readmegenerator/issues"
-  },
-  "homepage": "https://github.com/ashleybostrom/readmegenerator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^6.3.1"
   }
 }
