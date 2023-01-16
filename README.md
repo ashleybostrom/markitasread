@@ -8,9 +8,8 @@ This CLI App has been created to generate a README that follows all of the guide
 * [Acceptance Criteria](#acceptancecriteria)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Guidelines](#guidelines)
+* [Licensing](#licensing)
 * [Walk-Through Video](#walkthroughvideo)
-* [Questions](#questions)
 * [Credits](#credits)
 
 ## User Story
@@ -39,7 +38,6 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-
 ## Installation
 
 ### Prerequisite programs:  
@@ -60,6 +58,10 @@ In the VS Code terminal, type `node index.js`
 
 Answer the questions to generate your README. Once complete, you will find it in the 'dist' folder.
 
-## Screenshots
+## Licensing
+* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Walk-Through Video
+
+## Credits
+This README generator was created with some guidance from [edX Boot Camps Github](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
