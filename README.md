@@ -56,7 +56,7 @@ Once the above steps are complete, the generator is ready.
 
 In the VS Code terminal, type `node index.js`
 
-Answer the questions to generate your README. Once complete, you will find it in the 'dist' folder.
+Answer the questions to generate your README. Once complete, you will find it in the 'utils' folder.
 
 ## Licensing
 * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)

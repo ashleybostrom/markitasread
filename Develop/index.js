@@ -15,7 +15,7 @@ const questions = [
             if (githubUsernameInput) {
                 return true;
             } else {
-                console.log('Please enter your GitHub username!');
+                console.log('Enter your GitHub username.');
                 return false;
             }
         }
@@ -28,7 +28,7 @@ const questions = [
             if (emailInput) {
                 return true;
             } else {
-                console.log('Please enter your email address!');
+                console.log('Enter your email address.');
                 return false;
             }
         } 
@@ -41,7 +41,7 @@ const questions = [
             if (titleInput) {
                 return true;
             } else {
-                console.log('Please enter your project title!');
+                console.log('Give it a title to remember.');
                 return false;
             }
         }
@@ -54,20 +54,20 @@ const questions = [
             if (descriptionInput) {
                 return true;
             } else {
-                console.log('Please enter a description of your project!');
+                console.log('Tell us about your project.');
                 return false;
             }
         }
     },
     { 
         type: 'input',
-        name: 'motivation'
+        name: 'motivation',
         message: 'What was your motivation for your project? (Required)',
         validate: motivationInput => {
             if (motivationInput) {
                 return true;
             } else {
-                console.log('Please enter your motivation for your project!');
+                console.log('Enter your motivation, interest, or inspiration for your project.');
                 return false;
             }
         }
@@ -80,7 +80,7 @@ const questions = [
             if (purposeInput) {
                 return true;
             } else {
-                console.log('Please enter your motivation for your project!');
+                console.log('We need to know the WHY behind your project.');
                 return false;
             }
         }
@@ -93,7 +93,7 @@ const questions = [
             if (solveInput) {
                 return true;
             } else {
-                console.log('Please enter your motivation for your project!');
+                console.log('Enlighten us on your problem solving skills in this project.');
                 return false;
             }
         }
@@ -106,7 +106,7 @@ const questions = [
             if (learnInput) {
                 return true;
             } else {
-                console.log('Please enter your motivation for your project!');
+                console.log('Please tell us what you learned from this project.');
                 return false;
             }
         }
@@ -119,18 +119,98 @@ const questions = [
             if (uniqueInput) {
                 return true;
             } else {
-                console.log('Please enter your motivation for your project!');
+                console.log('Please pique our interest for your own unique project.');
                 return false;
             }
         }
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'What are the steps required to install your project? (Required)',
+        validate: installationInput => {
+            if (installationInput) {
+                return true;
+            } else {
+                console.log('Provide steps so we can install your project.');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for use. (Required)',
+        validate: usageInput => {
+            if (usageInput) {
+                return true;
+            } else {
+                console.log('Please provide instructions and examples for use.');
+                return false;
+            }
+        }
+    },
+    { 
+        type: 'input',
+        name: 'credits',
+        message: 'List your collaborators, if any, with links to their GitHub profiles. (Required)',
+        validate: creditsInput => {
+            if (creditsInput) {
+                return true;
+            } else {
+                console.log('Please list your collaborators, if any, with links to their GitHub profiles.');
+                return false;
+            }
+        }
+    },
+    {
+        type: 'confirm',
+        name: 'confirmLicense',
+        message: 'Would you like to include a license?',
+        default: true
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Choose a license for your project.',
+        choices: ['Apache','GNU', 'IBM', 'ISC', 'MIT', 'Mozilla'],
     }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log('README.md file has now been generated.')
+    });
+}
+
+const writeFileAsync = util.promisify(writeToFile);
 
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+    try {
+
+        //Inquirer prompts
+        const userResponses = await inquirer.prompt(questions);
+        console.log('Your responses: ', userResponses);
+        console.log('Thank you for providing all the information needed to generate your README.md file.');
+
+        //Call to generate markdown
+        console.log('Generating...');
+        const markdown = generateMarkdown(userResponses);
+        console.log(markdown);
+
+        //Write to file
+        await writeFileAsync('README.md', markdown);
+    
+    } catch (err) {
+        console.log(err);
+    }
+};
 
 // Function call to initialize app
 init();
