@@ -2,14 +2,23 @@
 
 This CLI App has been created to generate a README that follows all of the guidelines to contain all of the requirements for a high-quality and professional file. This application allows the developer to input solely the information needed then compiles the data with concise clarity. This allows the developer to spend more time on their actual programs and applications, streamlining their design and development process. 
 
-## User Story
 
+## Table of Contents:
+* [User Story](#userstory)
+* [Acceptance Criteria](#acceptancecriteria)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Guidelines](#guidelines)
+* [Walk-Through Video](#walkthroughvideo)
+* [Questions](#questions)
+* [Credits](#credits)
+
+## User Story
 ```
 AS A developer
 I WANT a README generator
 SO THAT I can quickly create a professional README for a new project
 ```
-
 ## Acceptance Criteria
 
 ```
@@ -29,6 +38,27 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
+
+
+## Installation
+
+### Prerequisite programs:  
+* VS Code  
+* GitBash (Windows) or Homebrew (Mac) 
+* Node.js 
+
+### How to start the project:  
+1. **Copy Link in Code Dropdown Menu:** Copy the link with SSH key to clone the repo
+1. **Clone:** In GitBash (Windows) or Terminal (Mac), type `git clone < $link >`
+1. **NPM:** Type `npm init -y` to install NPM (Node Package Manager)
+1. **Inquirer:** Type `npm i inquirer` to install npm's inquirer package
+
+## Usage
+Once the above steps are complete, the generator is ready.
+
+In the VS Code terminal, type `node index.js`
+
+Answer the questions to generate your README. Once complete, you will find it in the 'dist' folder.
 
 ## Screenshots
 
