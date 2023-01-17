@@ -63,5 +63,7 @@ Answer the questions to generate your README. Once complete, you will find it in
 
 ## Walk-Through Video
 
+[![Watch the video]](https://drive.google.com/file/d/18RkIxSma6EYE-jIPyWFqqL6zS3sOnDP6/view)
+
 ## Credits
 This README generator was created with some guidance from [edX Boot Camps Github](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
