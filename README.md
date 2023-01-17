@@ -49,7 +49,7 @@ THEN I am taken to the corresponding section of the README
 1. **Copy link in code dropdown menu:** Copy the link with SSH key to clone the repo
 1. **Clone:** In GitBash (Windows) or Terminal (Mac), type `git clone < $link >`
 1. **NPM:** Type `npm init -y` to install NPM (Node Package Manager)
-1. **Inquirer:** Type `npm i inquirer` to install npm's inquirer package
+1. **Inquirer:** Type `npm i inquirer@8.2.4` to install npm's inquirer package
 
 ## Usage
 Once the above steps are complete, the generator is ready.

@@ -4,8 +4,6 @@ const fs = require('fs');
 const util = require('util')
 const generateMarkdown = require('./Develop/utils/generateMarkdown');
 
-console.log('Welcome to the README.md Generator!');
-
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -141,7 +139,7 @@ async function init() {
         console.log(markdown);
 
         //Write to file
-        await writeFileAsync('README.md', markdown);
+        await writeFileAsync('newREADME.md', markdown);
     
     } catch (err) {
         console.log(err);
