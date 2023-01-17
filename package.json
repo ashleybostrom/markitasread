@@ -1,0 +1,23 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "This CLI App has been created to generate a README that follows all of the guidelines to contain all of the requirements for a high-quality and professional file. This application allows the developer to input solely the information needed then compiles the data with concise clarity. This allows the developer to spend more time on their actual programs and applications, streamlining their design and development process.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleybostrom/readmegenerator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleybostrom/readmegenerator/issues"
+  },
+  "homepage": "https://github.com/ashleybostrom/readmegenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}

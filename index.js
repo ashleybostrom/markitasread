@@ -23,7 +23,7 @@ const questions = [
     },
     {
         type: 'input', 
-        name: 'email', 
+        name: 'emailInput', 
         message: 'What is your email address? (Required)', 
         validate: emailInput => {
             if (emailInput) {
@@ -36,7 +36,7 @@ const questions = [
     },
     {
         type: 'input', 
-        name: 'title', 
+        name: 'titleInput', 
         message: 'What is your project title? (Required)', 
         validate: titleInput => {
             if (titleInput) {
