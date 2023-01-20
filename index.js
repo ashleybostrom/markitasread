@@ -35,66 +35,26 @@ const questions = [
         type: 'input', 
         name: 'titleInput', 
         message: 'What is your project title? (Required)', 
-        validate: titleInput => {
-            if (titleInput) {
-                return true;
-            } else {
-                console.log('Give it a title to remember.');
-                return false;
-            }
-        }
     },  
     {
         type: 'input',
         name: 'description',
         message: 'Write a concise description of your project (Required)',
-        validate: descriptionInput => {
-            if (descriptionInput) {
-                return true;
-            } else {
-                console.log('Tell us about your project.');
-                return false;
-            }
-        }
     },
     {
         type: 'input',
         name: 'installation',
         message: 'What are the steps required to install your project? (Required)',
-        validate: installationInput => {
-            if (installationInput) {
-                return true;
-            } else {
-                console.log('Provide steps so we can install your project.');
-                return false;
-            }
-        }
     },
     {
         type: 'input',
         name: 'usage',
         message: 'Provide instructions and examples for use. (Required)',
-        validate: usageInput => {
-            if (usageInput) {
-                return true;
-            } else {
-                console.log('Please provide instructions and examples for use.');
-                return false;
-            }
-        }
     },
     { 
         type: 'input',
         name: 'credits',
         message: 'List your collaborators, if any, with links to their GitHub profiles. (Required)',
-        validate: creditsInput => {
-            if (creditsInput) {
-                return true;
-            } else {
-                console.log('Please list your collaborators, if any, with links to their GitHub profiles.');
-                return false;
-            }
-        }
     },
     {
         type: 'confirm',
