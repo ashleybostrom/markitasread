@@ -1,11 +1,11 @@
 
-  t
+  # README Generator
   
   ## Description
 
   *The purpose of this project and what it achieves:*
 
-  t
+  A CLI app to generate a readme using markdown
 
   ## Table of Contents
  
@@ -23,13 +23,13 @@
   
   *Steps needed to install and run the application:*
   
-  t
+  clone repo, npm init -y, npm i inquirer@8.2.4 for correct version, node index.js to run program
 
   ## Usage
 
   *Instructions and potential use cases:*
   
-  t
+  Once you have the prompts answered, the program will create a newREADME.md file for you in markdown format
   
   ## Licensing
   
@@ -39,14 +39,14 @@
   
   *Please credit any contributors or cited sources here.*
   
-  t
+  None
 
   ## Questions
    
   *For any questions, contact information is below:*
  
-  GitHub: www.github.com/t 
+  GitHub: www.github.com/ashleybostrom 
 
     
-  Email: undefined
+  Email: ashleybostrom@gmail.com
   
