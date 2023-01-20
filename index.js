@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type: 'input', 
-        name: 'titleInput', 
+        name: 'title', 
         message: 'What is your project title? (Required)', 
     },  
     {
