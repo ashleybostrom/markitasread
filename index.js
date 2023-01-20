@@ -129,7 +129,7 @@ function init() {
         }
 
         console.log(responses);
-        writeToFile('README.md', generateMarkdown({...responses}));
+        writeToFile('README.md', generateMarkdown({responses}));
     });
 }
 
