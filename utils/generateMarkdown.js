@@ -5,19 +5,19 @@
       if (license = 'MIT License') {
         return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
       }
-      else if (license = 'GNU GPL v3') {
+      if (license = 'GNU GPL v3') {
         return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
       }
-      else if (license = 'Apache License 2.0') {
+      if (license = 'Apache License 2.0') {
         return `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
       } 
-      else if (license = 'ISC License (ISC)') {
+      if (license = 'ISC License (ISC)') {
         return `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
       }
-      else if (license = 'Mozilla Public License 2.0') {
+      if (license = 'Mozilla Public License 2.0') {
         return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
       } 
-      else if (license = 'IBM Public License Version 1.0') {
+      if (license = 'IBM Public License Version 1.0') {
         return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
       }
     }
