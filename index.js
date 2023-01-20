@@ -58,7 +58,7 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
 
-        console.log('README.md file has now been generated.')
+        console.log('newREADME.md file has now been generated.')
     });
 }
 
