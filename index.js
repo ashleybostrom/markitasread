@@ -110,7 +110,7 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err => {
         if (err) {
@@ -121,29 +121,17 @@ function writeToFile(fileName, data) {
     });
 }
 
-const writeFileAsync = util.promisify(writeToFile);
+// Function to initialize app
+function init() {
+    inquirer.createPromptModule(questions).then((responses) => {
+        if (err) {
+            return console.log(err);
+        }
 
-// TODO: Create a function to initialize app
-async function init() {
-    try {
-
-        //Inquirer prompts
-        const userResponses = await inquirer.prompt(questions);
-        console.log('Your responses: ', userResponses);
-        console.log('Thank you for providing all the information needed to generate your README.md file.');
-
-        //Call to generate markdown
-        console.log('Generating...');
-        const markdown = generateMarkdown(userResponses);
-        console.log(markdown);
-
-        //Write to file
-        await writeFileAsync('newREADME.md', markdown);
-    
-    } catch (err) {
-        console.log(err);
-    }
-};
+        console.log(responses);
+        writeToFile('README.md', generateMarkdown({...responses}));
+    });
+}
 
 // Function call to initialize app
 init();
