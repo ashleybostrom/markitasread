@@ -10,5 +10,14 @@
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashleybostrom/readmegenerator.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/ashleybostrom/readmegenerator/issues"
+  },
+  "homepage": "https://github.com/ashleybostrom/readmegenerator#readme"
 }
