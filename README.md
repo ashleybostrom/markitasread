@@ -1,4 +1,4 @@
-# README Generator
+# Mark It As Read
 
 This CLI App has been created to generate a README that follows all of the guidelines to contain all of the requirements for a high-quality and professional file. This application allows the developer to input solely the information needed then compiles the data with concise clarity. This allows the developer to spend more time on their actual programs and applications, streamlining their design and development process. 
 
