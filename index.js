@@ -1,7 +1,6 @@
 // Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util')
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // Array of questions for user input
