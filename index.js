@@ -60,20 +60,19 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-
         console.log('README.md file has now been generated.')
     });
 }
 
 // Function to initialize app
 function init() {
-    inquirer.createPromptModule(questions).then((responses) => {
+    inquirer.prompt(questions).then((responses) => {
         if (err) {
             return console.log(err);
         }
 
         console.log(responses);
-        writeToFile('README.md', generateMarkdown({responses}));
+        writeToFile('README.md', generateMarkdown(responses));
     });
 }
 
