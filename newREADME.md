@@ -1,11 +1,11 @@
 
-  # undefined
+  # t
   
   ## Description
 
   *The purpose of this project and what it achieves:*
 
-  A CLI app to generate a README
+  t
 
   ## Table of Contents
  
@@ -23,13 +23,13 @@
   
   *Steps needed to install and run the application:*
   
-  Clone the repo, npm init -y for npm, npm i inquirer@8.2.4 for correct version of inquirer, the node index.js to run the app
+  t
 
   ## Usage
 
   *Instructions and potential use cases:*
   
-  Once prompted, answer questions in CLI to generate your readme
+  t
   
   ## Licensing
   
@@ -39,13 +39,13 @@
   
   *Please credit any contributors or cited sources here.*
   
-  None
+  t
 
   ## Questions
    
   *For any questions, contact information is below:*
  
-  GitHub: www.github.com/ashleybostrom 
+  GitHub: www.github.com/t 
 
     
   Email: undefined
