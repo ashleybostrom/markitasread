@@ -10,7 +10,7 @@ function generateMarkdown(responses) {
 
   ## Description
 
-  *The purpose of the project and any roadblocks/experiences you'd like to share along the way:*
+  *The purpose of this project and what it achieves:*
 
   ${responses.descriptionInput}
 
